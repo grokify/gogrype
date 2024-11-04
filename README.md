@@ -6,7 +6,7 @@
 [![LOC][loc-svg]][loc-url]
 [![License][license-svg]][license-url]
 
- [build-status-svg]: https://github.com/grokify/gogrype/workflows/build/badge.svg
+ [build-status-svg]: https://github.com/grokify/gogrype/workflows/test/badge.svg
  [build-status-url]: https://github.com/grokify/gogrype/actions
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/gogrype
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/gogrype
