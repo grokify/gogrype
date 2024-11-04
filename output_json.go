@@ -127,7 +127,7 @@ const (
 	KeyVulnerabilityID          = "vulnerability_id"
 	KeyVulnerabilityIDLinkMD    = "vulnerability_id_link_markdown"
 	KeyVulnerabilityFixVersions = "vulnerability_fix_versions"
-	KeyVulnerabiltyNVDURL       = "vulnerabilty_nvd_url"
+	KeyVulnerabiltyNVDURL       = "vulnerability_nvd_url"
 	KeyVulnerabilitySeverity    = "vulnerability_severity"
 )
 
