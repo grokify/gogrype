@@ -3,8 +3,8 @@ module github.com/grokify/gogrype
 go 1.23.2
 
 require (
-	github.com/grokify/gocharts/v2 v2.20.4
-	github.com/grokify/mogo v0.65.2
+	github.com/grokify/gocharts/v2 v2.21.0
+	github.com/grokify/mogo v0.65.5
 )
 
 require (
@@ -17,11 +17,11 @@ require (
 	github.com/xuri/efp v0.0.0-20240408161823-9ad904a10d6d // indirect
 	github.com/xuri/excelize/v2 v2.9.0 // indirect
 	github.com/xuri/nfp v0.0.0-20240318013403-ab9948c2c4a7 // indirect
-	golang.org/x/crypto v0.28.0 // indirect
-	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c // indirect
-	golang.org/x/image v0.21.0 // indirect
-	golang.org/x/net v0.30.0 // indirect
-	golang.org/x/text v0.19.0 // indirect
+	golang.org/x/crypto v0.29.0 // indirect
+	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f // indirect
+	golang.org/x/image v0.22.0 // indirect
+	golang.org/x/net v0.31.0 // indirect
+	golang.org/x/text v0.20.0 // indirect
 )
 
 // replace github.com/grokify/gocharts/v2 => ../gocharts
