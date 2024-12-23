@@ -33,13 +33,13 @@ func (out GrypeOutputJSON) Len() int {
 
 type Matches []Match
 
-func (ms Matches) Table(colDefs *table.ColumnDefinitions) *table.Table {
+func (ms Matches) Table(colDefs *table.ColumnDefinitionSet) *table.Table {
 	if colDefs == nil || len(colDefs.Definitions) == 0 {
-		cds := DefaultTableColumnDefinitions()
+		cds := DefaultTableColumnDefinitionSet()
 		colDefs = &cds
 	}
 	tbl := table.NewTable("")
-	tbl.LoadColumnDefinitions(colDefs)
+	tbl.LoadColumnDefinitionSet(*colDefs)
 
 	for _, m := range ms {
 		tbl.Rows = append(tbl.Rows, m.Slice(tbl.Columns))
@@ -47,7 +47,7 @@ func (ms Matches) Table(colDefs *table.ColumnDefinitions) *table.Table {
 	return &tbl
 }
 
-func (ms Matches) WriteFileXLSX(filename string, colDefs *table.ColumnDefinitions) error {
+func (ms Matches) WriteFileXLSX(filename string, colDefs *table.ColumnDefinitionSet) error {
 	tbl := ms.Table(colDefs)
 	if tbl == nil {
 		return errors.New("table cannot be nil")
@@ -103,8 +103,8 @@ type Artifact struct {
 	Type    string `json:"type"`
 }
 
-func DefaultTableColumnDefinitions() table.ColumnDefinitions {
-	return table.BuildColumnDefinitions(
+func DefaultTableColumnDefinitionSet() table.ColumnDefinitionSet {
+	return table.BuildColumnDefinitionSet(
 		[]string{
 			KeyArtifactName,
 			KeyArtifactVersion,
