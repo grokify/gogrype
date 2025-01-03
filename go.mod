@@ -4,7 +4,7 @@ go 1.23.2
 
 require (
 	github.com/grokify/gocharts/v2 v2.21.3
-	github.com/grokify/mogo v0.66.4
+	github.com/grokify/mogo v0.67.1
 )
 
 require (
