@@ -23,13 +23,19 @@
 
 ## Usage
 
-Generate Grype JSON output.
+### Generate Grype JSON output from SBOM
 
 ```
 % grype sbom:./sbom.spdx.json --add-cpes-if-none > grypeout.json
 ```
 
-Convert Grype JSON output to XLSX file:
+### Generate Grype JSON output from JAR
+
+```
+% grype log4shell-vulnerable-app-all.jar -o json > grypeout.json
+```
+
+### Convert Grype JSON output to XLSX file:
 
 ```
 % go run cmd/json2xlsx/main.go grypeout.json grypeout.xlsx
