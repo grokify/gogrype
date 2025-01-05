@@ -38,8 +38,23 @@
 % grype log4shell-vulnerable-app-all.jar -o json > grypeout.json
 ```
 
-### Convert Grype JSON output to XLSX file:
+### Convert Grype JSON output to XLSX file
 
 ```
 % go run cmd/json2xlsx/main.go grypeout.json grypeout.xlsx
+```
+
+### Integrate with GoVEX
+
+```
+import (
+    "github.com/grokify/gogrype"
+	"github.com/grokify/mogo/fmt/fmtutil"
+	"github.com/grokify/mogo/log/logutil"
+)
+
+g, err := gogrype.ReadFileGrypeOutputJSON(f)
+logutil.FatalErr(err)
+fmtutil.PrintJSON(g)
+fmtutil.PrintJSON(g.GoVEXes())
 ```
