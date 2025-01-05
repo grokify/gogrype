@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/grokify/gocharts/v2/data/table"
+	"github.com/grokify/govex"
 	"github.com/grokify/mogo/errors/errorsutil"
 	"github.com/grokify/mogo/text/markdown"
 )
@@ -29,6 +30,14 @@ func ReadFileGrypeOutputJSON(filename string) (*GrypeOutputJSON, error) {
 
 func (out GrypeOutputJSON) Len() int {
 	return len(out.Matches)
+}
+
+func (out GrypeOutputJSON) GoVEXes() govex.Vulnerabilities {
+	vulns := govex.Vulnerabilities{}
+	for _, m := range out.Matches {
+		vulns = append(vulns, m.GoVex())
+	}
+	return vulns
 }
 
 type Matches []Match
@@ -60,8 +69,41 @@ type Match struct {
 	Artifact      Artifact      `json:"artifact"`
 }
 
+func (m Match) GoVex() govex.Vulnerability {
+	vn := govex.Vulnerability{
+		ID:       m.Vulnerability.ID,
+		Name:     m.Vulnerability.Description,
+		Severity: m.Vulnerability.Severity,
+		Library: govex.Library{
+			Name:    strings.TrimSpace(m.Artifact.Name),
+			Version: strings.TrimSpace(m.Artifact.Version),
+			Type:    strings.TrimSpace(m.Artifact.Type),
+		},
+	}
+	if vn.Library.Name != "" {
+		vn.Category = govex.CategorySCA
+	}
+	for _, u := range m.Vulnerability.URLs {
+		vn.ReferenceURL = u
+		break
+	}
+	for _, ver := range m.Vulnerability.Fix.Versions {
+		vn.Library.VersionFixed = ver
+		break
+	}
+	for i, cvss := range m.Vulnerability.CVSS {
+		if i == len(m.Vulnerability.CVSS)-1 {
+			vn.CVSS3Vector = cvss.Vector
+			vn.CVSS3Score = &cvss.Metrics.BaseScore
+			break
+		}
+	}
+	return vn
+}
+
 type Vulnerability struct {
 	ID          string   `json:"id"`
+	CVSS        []CVSS   `json:"cvss"`
 	DataSource  string   `json:"dataSource"`
 	Description string   `json:"description"`
 	Fix         Fix      `json:"fix"`
