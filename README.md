@@ -1,13 +1,16 @@
 # Go Grype
 
 [![Build Status][build-status-svg]][build-status-url]
+[![Lint Status][lint-status-svg]][lint-status-url]
 [![Go Report Card][goreport-svg]][goreport-url]
 [![Docs][docs-godoc-svg]][docs-godoc-url]
 [![LOC][loc-svg]][loc-url]
 [![License][license-svg]][license-url]
 
  [build-status-svg]: https://github.com/grokify/gogrype/workflows/test/badge.svg
- [build-status-url]: https://github.com/grokify/gogrype/actions
+ [build-status-url]: https://github.com/grokify/gogrype/actions/workflows/test.yaml
+ [lint-status-svg]: https://github.com/grokify/gogrype/workflows/lint/badge.svg
+ [lint-status-url]: https://github.com/grokify/gogrype/actions/workflows/lint.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/gogrype
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/gogrype
  [codeclimate-status-svg]: https://codeclimate.com/github/grokify/gogrype/badges/gpa.svg
