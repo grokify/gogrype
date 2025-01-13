@@ -3,7 +3,7 @@ module github.com/grokify/gogrype
 go 1.23.2
 
 require (
-	github.com/grokify/gocharts/v2 v2.21.9
+	github.com/grokify/gocharts/v2 v2.21.10
 	github.com/grokify/govex v0.9.7
 	github.com/grokify/mogo v0.67.2
 )
