@@ -3,9 +3,9 @@ module github.com/grokify/gogrype
 go 1.23.2
 
 require (
-	github.com/grokify/gocharts/v2 v2.22.3
+	github.com/grokify/gocharts/v2 v2.22.6
 	github.com/grokify/govex v0.9.7
-	github.com/grokify/mogo v0.68.1
+	github.com/grokify/mogo v0.68.3
 )
 
 require (
@@ -34,5 +34,5 @@ require (
 	golang.org/x/net v0.37.0 // indirect
 	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
-	gonum.org/v1/gonum v0.15.1 // indirect
+	gonum.org/v1/gonum v0.16.0 // indirect
 )
