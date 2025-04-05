@@ -7,9 +7,9 @@
 [![LOC][loc-svg]][loc-url]
 [![License][license-svg]][license-url]
 
- [build-status-svg]: https://github.com/grokify/gogrype/workflows/test/badge.svg
- [build-status-url]: https://github.com/grokify/gogrype/actions/workflows/test.yaml
- [lint-status-svg]: https://github.com/grokify/gogrype/workflows/lint/badge.svg
+ [build-status-svg]: https://github.com/grokify/gogrype/actions/workflows/ci.yaml/badge.svg?branch=main
+ [build-status-url]: https://github.com/grokify/gogrype/actions/workflows/ci.yaml
+ [lint-status-svg]: https://github.com/grokify/gogrype/actions/workflows/lint.yaml/badge.svg?branch=main
  [lint-status-url]: https://github.com/grokify/gogrype/actions/workflows/lint.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/gogrype
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/gogrype
