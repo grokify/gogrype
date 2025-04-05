@@ -12,6 +12,6 @@ func main() {
 	f := "grype_log4shell-vulnerable-app.json"
 	g, err := gogrype.ReadFileGrypeOutputJSON(f)
 	logutil.FatalErr(err)
-	fmtutil.PrintJSON(g)
-	fmtutil.PrintJSON(g.GoVEXes())
+	fmtutil.MustPrintJSON(g)
+	fmtutil.MustPrintJSON(g.GoVEXes())
 }
