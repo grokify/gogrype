@@ -15,8 +15,8 @@ github.com/grokify/google-fonts v0.1.1 h1:dLU3TLuYVkD9/zbLyngAtvNwRG4K2X+ytjBSOF
 github.com/grokify/google-fonts v0.1.1/go.mod h1:bNYZ1YRctJ81DLbh06AzO7EBGFddcAjMWshgSz1pBWU=
 github.com/grokify/govex v0.9.8 h1:tZyOQXHm35+GCU6DyZmx8H9PqO/11AGISsX971noI94=
 github.com/grokify/govex v0.9.8/go.mod h1:mRkla2PIZFyWB/BKHtnzCGRrkSsj2u6E3BiA93zfGNg=
-github.com/grokify/mogo v0.68.6 h1:oBOqBLpUDr+YbJUgtNP75hqh1XPj8G4qjWy5Kpqktcw=
-github.com/grokify/mogo v0.68.6/go.mod h1:+X+qlyZ+J61I6w27AOLAb0r/0ceRfy4jdfrHNDPzx7o=
+github.com/grokify/mogo v0.68.10 h1:6uI+ivMuK9J/PrhIp6Hc3G8L9hJXqb/jM7+mmHHX78I=
+github.com/grokify/mogo v0.68.10/go.mod h1:HBlrl/fprKiwT1yrMWRw8SdbydiIFxu7iPlbcMgUnF4=
 github.com/huandu/xstrings v1.5.0 h1:2ag3IFq9ZDANvthTwTiqSSZLjDc+BedvHPAp5tJy2TI=
 github.com/huandu/xstrings v1.5.0/go.mod h1:y5/lhBue+AyNmUVz9RLU9xbLR0o4KIIExikq4ovT0aE=
 github.com/jessevdk/go-flags v1.6.1 h1:Cvu5U8UGrLay1rZfv/zP7iLpSHGUZ/Ou68T0iX1bBK4=
