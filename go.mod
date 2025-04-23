@@ -7,7 +7,7 @@ toolchain go1.24.1
 require (
 	github.com/grokify/gocharts/v2 v2.23.2
 	github.com/grokify/govex v0.9.8
-	github.com/grokify/mogo v0.68.6
+	github.com/grokify/mogo v0.68.11
 )
 
 require (
