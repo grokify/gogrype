@@ -5,16 +5,16 @@ go 1.24
 toolchain go1.24.1
 
 require (
-	github.com/grokify/gocharts/v2 v2.23.2
-	github.com/grokify/govex v0.9.8
-	github.com/grokify/mogo v0.68.6
+	github.com/grokify/gocharts/v2 v2.24.1
+	github.com/grokify/govex v0.11.3
+	github.com/grokify/mogo v0.68.15
 )
 
 require (
 	github.com/essentialkaos/go-badge v1.4.1 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/grokify/base36 v1.0.5 // indirect
-	github.com/grokify/google-fonts v0.1.1 // indirect
+	github.com/grokify/google-fonts v0.1.4 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
 	github.com/jessevdk/go-flags v1.6.1 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
@@ -27,9 +27,9 @@ require (
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/quicktemplate v1.8.0 // indirect
-	github.com/xuri/efp v0.0.0-20250227110027-3491fafc2b79 // indirect
+	github.com/xuri/efp v0.0.1 // indirect
 	github.com/xuri/excelize/v2 v2.9.0 // indirect
-	github.com/xuri/nfp v0.0.0-20250226145837-86d5fc24b2ba // indirect
+	github.com/xuri/nfp v0.0.1 // indirect
 	golang.org/x/crypto v0.37.0 // indirect
 	golang.org/x/exp v0.0.0-20250408133849-7e4ce0ab07d0 // indirect
 	golang.org/x/image v0.26.0 // indirect
