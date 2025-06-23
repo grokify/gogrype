@@ -7,7 +7,7 @@ toolchain go1.24.1
 require (
 	github.com/grokify/gocharts/v2 v2.24.10
 	github.com/grokify/govex v0.12.8
-	github.com/grokify/mogo v0.70.4
+	github.com/grokify/mogo v0.70.9
 )
 
 require (
@@ -40,7 +40,7 @@ require (
 	github.com/xuri/excelize/v2 v2.9.1 // indirect
 	github.com/xuri/nfp v0.0.1 // indirect
 	golang.org/x/crypto v0.39.0 // indirect
-	golang.org/x/exp v0.0.0-20250606033433-dcc06ee1d476 // indirect
+	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b // indirect
 	golang.org/x/image v0.28.0 // indirect
 	golang.org/x/net v0.41.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
