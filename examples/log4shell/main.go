@@ -13,5 +13,5 @@ func main() {
 	g, err := gogrype.ReadFileGrypeOutputJSON(f)
 	logutil.FatalErr(err)
 	fmtutil.MustPrintJSON(g)
-	fmtutil.MustPrintJSON(g.GoVEXes())
+	fmtutil.MustPrintJSON(g.Findings(gogrype.FindingSpecOptions{}))
 }
