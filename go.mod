@@ -5,6 +5,7 @@ go 1.26.4
 require (
 	github.com/grokify/gocharts/v2 v2.27.1
 	github.com/grokify/mogo v0.75.0
+	github.com/plexusone/findingspec v0.1.0
 )
 
 require (
@@ -22,7 +23,6 @@ require (
 	github.com/olekukonko/errors v1.3.0 // indirect
 	github.com/olekukonko/ll v0.1.8 // indirect
 	github.com/olekukonko/tablewriter v1.1.5 // indirect
-	github.com/plexusone/findingspec v0.1.0
 	github.com/richardlehane/mscfb v1.0.9 // indirect
 	github.com/richardlehane/msoleps v1.0.6 // indirect
 	github.com/tiendc/go-deepcopy v1.7.2 // indirect
