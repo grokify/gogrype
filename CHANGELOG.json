@@ -1,0 +1,109 @@
+{
+  "irVersion": "1.0",
+  "project": "gogrype",
+  "repository": "https://github.com/grokify/gogrype",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": [
+    "grokify",
+    "johncwang@gmail.com"
+  ],
+  "bots": [
+    "dependabot[bot]"
+  ],
+  "releases": [
+    {
+      "version": "v0.2.0",
+      "date": "2026-10-04",
+      "commit": "4f8fe20",
+      "highlights": [
+        { "description": "Grype output now converts to the shared [findingspec](https://github.com/plexusone/findingspec) IR — `GrypeOutputJSON.Findings` / `Match.ToFinding` produce `findingspec.Finding` with typed CVSS and fix state, CVE extraction, and container-vs-SCA typing", "commit": "4f8fe20" },
+        { "description": "The `github.com/grokify/govex` dependency is removed entirely; findingspec is the sole normalized vulnerability output (breaking)", "commit": "c4c8c4f" },
+        { "description": "New `flatjson` package parsing the Grype/Anchore flat-JSON image-inventory-by-vulnerability export with per-file and aggregate severity statistics", "commit": "94f711d" }
+      ],
+      "added": [
+        { "description": "`GrypeOutputJSON.Findings(FindingSpecOptions)` and `Match.ToFinding(FindingSpecOptions)` convert Grype matches to `findingspec.Finding` (security domain), with `FindingSpecOptions` for image/digest/repo context", "commit": "4f8fe20" },
+        { "description": "`flatjson` package: parse Grype/Anchore flat-JSON exports (`File`, `Files`, `Results`, `Stats`) plus a `cmd/parse` CLI taking `-file` or `-dir`", "commit": "94f711d" }
+      ],
+      "removed": [
+        { "description": "**Breaking:** `GrypeOutputJSON.GoVEXes()` and `Match.GoVex()` are removed along with the `github.com/grokify/govex` dependency. Use `Findings` / `ToFinding`, which return findingspec types", "commit": "c4c8c4f" }
+      ],
+      "documentation": [
+        { "description": "Remove the discontinued Go Report Card shield from `README.md`", "commit": "67e1cc3" }
+      ],
+      "dependencies": [
+        { "description": "Add `github.com/plexusone/findingspec` v0.1.0 (and `github.com/grokify/priority-frameworks` as an indirect dependency)", "commit": "4f8fe20" },
+        { "description": "Remove `github.com/grokify/govex`", "commit": "c4c8c4f" },
+        { "description": "Bump `github.com/grokify/mogo` to v0.75.0 and `github.com/grokify/gocharts/v2` to v2.27.1", "commit": "1be6047" }
+      ]
+    },
+    {
+      "version": "v0.1.5",
+      "date": "2026-05-09",
+      "commit": "554833c",
+      "changed": [
+        { "description": "Migrate CI to shared org workflows and refresh dependencies", "commit": "71db3c6" }
+      ],
+      "documentation": [
+        { "description": "Update `README.md` shields", "commit": "554833c" }
+      ]
+    },
+    {
+      "version": "v0.1.4",
+      "date": "2026-03-02",
+      "commit": "5828b99",
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "512e924" }
+      ],
+      "documentation": [
+        { "description": "Update `README.md` shields", "commit": "5828b99" }
+      ]
+    },
+    {
+      "version": "v0.1.3",
+      "date": "2025-06-08",
+      "commit": "e3c6335",
+      "changed": [
+        { "description": "Rename CI workflows and update golangci-lint configuration", "commit": "301d6a8" }
+      ],
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "e3c6335" }
+      ]
+    },
+    {
+      "version": "v0.1.2",
+      "date": "2025-01-05",
+      "commit": "39a515a",
+      "added": [
+        { "description": "`GrypeOutputJSON.GoVEXes()` and `Match.GoVex()` converting Grype matches to govex vulnerabilities", "commit": "39a515a" },
+        { "description": "CVSS structs on the Grype output model", "commit": "831747f" },
+        { "description": "`examples/log4shell` example", "commit": "71b4186" }
+      ],
+      "documentation": [
+        { "description": "Add a README section on integrating with GoVEX", "commit": "27a578b" }
+      ]
+    },
+    {
+      "version": "v0.1.1",
+      "date": "2024-12-23",
+      "commit": "ec5ee2f",
+      "dependencies": [
+        { "description": "Update Go module dependencies", "commit": "ec5ee2f" }
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "2024-11-04",
+      "commit": "d749629",
+      "highlights": [
+        { "description": "Initial release: Grype JSON output model (`GrypeOutputJSON`, `Match`) with table and XLSX rendering", "commit": "d749629" }
+      ],
+      "added": [
+        { "description": "Grype JSON parsing and the `Matches` table / XLSX writer", "commit": "d749629" }
+      ],
+      "fixed": [
+        { "description": "Correct misspelling in `KeyVulnerabiltyNVDURL`", "commit": "69ddb7f" }
+      ]
+    }
+  ]
+}
