@@ -5,7 +5,7 @@ go 1.26.4
 require (
 	github.com/grokify/gocharts/v2 v2.27.1
 	github.com/grokify/mogo v0.75.0
-	github.com/plexusone/findingspec v0.1.0
+	github.com/plexusone/findingspec v0.4.0
 )
 
 require (
